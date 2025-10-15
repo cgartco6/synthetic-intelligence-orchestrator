@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Orchestrator - Multi-AI Content Generation Platform</title>
+    <meta name="description" content="Generate content, code, images, and more with our team of AI agents. Free tier available with high-paying ad support.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AI Orchestrator - Multi-AI Content Generation">
+    <meta property="og:description" content="Generate amazing content with our team of specialized AI agents. Free forever tier available!">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://ai-orchestrator.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Orchestrator">
+    <meta name="twitter:description" content="Multi-AI content generation platform">
+    <meta name="twitter:image" content="/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/js/app.js" as="script">
+    <link rel="preload" href="/images/hero-bg.jpg" as="image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/logo.svg" alt="AI Orchestrator" class="logo">
+                <span class="logo-text">AI Orchestrator</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <div class="nav-buttons">
+                    <a href="/login" class="btn btn-outline">Sign In</a>
+                    <a href="/register" class="btn btn-primary">Get Started Free</a>
+                </div>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Generate Amazing Content with
+                    <span class="gradient-text">AI Power</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Access a team of specialized AI agents for text generation, code creation, image design, research, analysis, and voice synthesis. 
+                    Start free with our ad-supported plan or upgrade for unlimited access.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/register" class="btn btn-primary btn-large">
+                        Start Creating Free
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-large">
+                        Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Free Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Paid Subscribers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">Tasks Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-demo">
+                <div class="demo-window">
+                    <div class="demo-header">
+                        <div class="demo-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <div class="ai-agent active" data-agent="creative">
+                            <div class="agent-header">
+                                <span class="agent-icon">🎨</span>
+                                <span class="agent-name">Creative Agent</span>
+                            </div>
+                            <div class="agent-output">
+                                Generating compelling marketing copy for your new product launch...
+                            </div>
+                        </div>
+                        <div class="ai-agent" data-agent="coding">
+                            <div class="agent-header">
+                                <span class="agent-icon">💻</span>
+                                <span class="agent-name">Coding Agent</span>
+                            </div>
+                            <div class="agent-output">
+                                Creating a React component with TypeScript and best practices...
+                            </div>
+                        </div>
+                        <div class="ai-agent" data-agent="research">
+                            <div class="agent-header">
+                                <span class="agent-icon">🔍</span>
+                                <span class="agent-name">Research Agent</span>
+                            </div>
+                            <div class="agent-output">
+                                Researching the latest trends in artificial intelligence...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful AI Agents at Your Service</h2>
+                <p>Our specialized AI team is ready to handle any creative or technical task</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Creative Content</h3>
+                    <p>Generate blog posts, social media content, ad copy, and product descriptions with AI creativity.</p>
+                    <ul class="feature-list">
+                        <li>Blog posts & articles</li>
+                        <li>Social media content</li>
+                        <li>Ad copy & marketing</li>
+                        <li>Product descriptions</li>
+                        <li>Email campaigns</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Code Generation</h3>
+                    <p>Create clean, efficient code in multiple programming languages with explanations and tests.</p>
+                    <ul class="feature-list">
+                        <li>JavaScript, Python, Java</li>
+                        <li>HTML/CSS templates</li>
+                        <li>SQL queries</li>
+                        <li>Code explanations</li>
+                        <li>Unit tests</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Research & Analysis</h3>
+                    <p>Get comprehensive research reports, data analysis, and insights powered by web search.</p>
+                    <ul class="feature-list">
+                        <li>Web research</li>
+                        <li>Data analysis</li>
+                        <li>Trend identification</li>
+                        <li>Sentiment analysis</li>
+                        <li>Comparative analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Voice Synthesis</h3>
+                    <p>Convert text to natural-sounding speech and transcribe audio with high accuracy.</p>
+                    <ul class="feature-icon">
+                        <li>Text-to-speech</li>
+                        <li>Speech-to-text</li>
+                        <li>Multiple voices</li>
+                        <li>Multiple languages</li>
+                        <li>Audio processing</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Image Generation</h3>
+                    <p>Create stunning images from text descriptions with AI-powered image generation.</p>
+                    <ul class="feature-list">
+                        <li>AI art generation</li>
+                        <li>Product images</li>
+                        <li>Marketing visuals</li>
+                        <li>Multiple styles</li>
+                        <li>High resolution</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Orchestration</h3>
+                    <p>Combine multiple AI agents for complex tasks and automated workflows.</p>
+                    <ul class="feature-list">
+                        <li>Multi-agent tasks</li>
+                        <li>Workflow automation</li>
+                        <li>Task scheduling</li>
+                        <li>Result synthesis</li>
+                        <li>API access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that works for you. All plans include access to all AI agents.</p>
+            </div>
+            
+            <div class="pricing-switcher">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly <span class="discount-badge">Save 20%</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/forever</span>
+                        </div>
+                        <p>Perfect for trying out AI content generation</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 5 text tasks daily</li>
+                        <li>✓ 1 image task daily</li>
+                        <li>✓ 1 code task daily</li>
+                        <li>✓ 1 research task daily</li>
+                        <li>✓ 1 analysis task daily</li>
+                        <li>✓ Ad-supported</li>
+                        <li>✓ Basic support</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="/register" class="btn btn-outline btn-full">Get Started Free</a>
+                    </div>
+                </div>
+                
+                <!-- Basic Tier -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">19</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Great for regular content creators</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 50 text tasks daily</li>
+                        <li>✓ 10 image tasks daily</li>
+                        <li>✓ 10 code tasks daily</li>
+                        <li>✓ 10 research tasks daily</li>
+                        <li>✓ 10 analysis tasks daily</li>
+                        <li>✓ 5 voice tasks daily</li>
+                        <li>✓ Reduced ads</li>
+                        <li>✓ Basic support</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="/register?plan=basic" class="btn btn-primary btn-full">Start Basic Plan</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">39</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For power users and professionals</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 200 text tasks daily</li>
+                        <li>✓ 50 image tasks daily</li>
+                        <li>✓ 50 code tasks daily</li>
+                        <li>✓ 50 research tasks daily</li>
+                        <li>✓ 50 analysis tasks daily</li>
+                        <li>✓ 20 voice tasks daily</li>
+                        <li>✓ Only 1 ad daily</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced analytics</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="/register?plan=premium" class="btn btn-outline btn-full">Go Premium</a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For teams and businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited all tasks</li>
+                        <li>✓ No ads</li>
+                        <li>✓ Premium priority support</li>
+                        <li>✓ Custom AI models</li>
+                        <li>✓ API access</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Team management</li>
+                        <li>✓ Advanced security</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="/contact" class="btn btn-outline btn-full">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-footer">
+                <p>All plans include access to all AI agents. 14-day money-back guarantee on paid plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Supercharge Your Content Creation?</h2>
+                <p>Join thousands of users already creating amazing content with AI Orchestrator</p>
+                <div class="cta-buttons">
+                    <a href="/register" class="btn btn-primary btn-large">
+                        Start Free Today
+                    </a>
+                    <a href="/demo" class="btn btn-outline btn-large">
+                        Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/images/logo.svg" alt="AI Orchestrator">
+                        <span>AI Orchestrator</span>
+                    </div>
+                    <p>Powerful AI content generation platform with a team of specialized agents for all your creative needs.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="/api">API Documentation</a></li>
+                        <li><a href="/changelog">Changelog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/tutorials">Tutorials</a></li>
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/community">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/contact">Contact Support</a></li>
+                        <li><a href="/status">System Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Orchestrator. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                    <a href="/cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+    
+    <!-- Analytics -->
+    <script>
+        // Basic analytics tracking
+        window.addEventListener('load', function() {
+            // Track page view
+            if (typeof gtag !== 'undefined') {
+                gtag('config', 'GA_MEASUREMENT_ID');
+            }
+        });
+    </script>
+</body>
+</html>
